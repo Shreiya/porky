@@ -1,0 +1,57 @@
+body {
+  background-color: #F38480;
+}
+
+.happyPiggy{
+  background-image: url("pigfacesmiley.svg");
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 55vh;
+  margin-top: 80px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+
+p {
+  font-size: 20px;
+font-weight: 2px;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  font-kerning: normal;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+}

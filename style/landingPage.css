@@ -1,0 +1,58 @@
+body {
+  background-color: #F38480;
+}
+
+.cryingPiggy{
+  background-image: url("pigfacelost.svg");
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 55vh;
+  margin-top: 80px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-family: Arial;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+#gamelink {
+  color: white;
+  margin-top: 5%;
+margin-left: 4%;
+font-size: 40px;
+font-weight: bolder;
+border: 5px white solid;
+border-width: medium;
+border-radius: 5px;
+height: 97px;
+padding: 10px;
+width: 548px;
+margin-top: 40px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+#instructions{
+  color: white;
+  border: 5px white solid;
+  border-width: medium;
+  border-radius: 5px;
+  width: 232px;
+  height: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
