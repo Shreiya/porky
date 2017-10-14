@@ -21,21 +21,25 @@ var maze = [
 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 ];
-var msgAr = ["FORWARD MARCH! MAGIC TRUFFLES AHEAD.",
-              "Just wanna get home, netflix and swill.",
-              "Rasher decisions to be made!",
-              "This little piggy might just become a threat to national charcuterie.",
-              "Don't worry piggy. You're not aloin.",
-              "Move on, move on! Stop being such a boar.",
-              "Oh my lardy lard piggy. What a mess you've got yourself into.",
-              "I see that taking shorcuts are snout your style.",
-              "I think we're really slaughtering the puns here.",
-              "Piggie! If you don't get home right now, you're going to barn in hell!"];
+var msgAr = ["How about you both stare into each other's eyes for 15 seconds?",
+              "Alright! Let's hold hands for a minute. Keep talking though!",
+              "Move your chairs closer. Come on, do it now.",
+              "Exchange drinks/plates. Just for a few bites though.",
+              "Talk about your past relationships. No, I'm not kidding here.",
+              "Time to give each other a compliment.",
+              "Describe your morning routine. Bathroom time included.",
+              "Make the ugliest face you can think of.",
+              "Have a hidden talent? Now's the time to show it!",
+              "Wink fest! Wink at each other 5 times consecutively.",
+              "Snort like the little piggy you are. Twice at that!",
+              "What's the first nursery rhyme you ever heard? You know what to do.",
+              "Enact a scene from your favourite movie. Do it now!",
+              "Touch each other's hair. Yes, I'm a monster."];
 var randomMsg = "";
 
 
 function generateMsg () {
-  var random = Math.floor((Math.random() * 10));
+  var random = Math.floor((Math.random() * 14));
   console.log(random);
   if (randomMsg === msgAr[random])
   generateMsg();
