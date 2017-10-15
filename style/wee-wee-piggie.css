@@ -79,7 +79,7 @@ margin-left: 65%;
 }
 
 .tree {
-  background-image: url('../images/hedge-1.png');
+  background-image: url('../images/tree.png');
 }
 
 .treasureChest {
@@ -95,7 +95,7 @@ margin-left: 65%;
   width:20px;
   height:20px;
   corner-radius:15px;
-  background-image: url('../images/cupidSmall.png');
+  background-image: url('../images/heart.png');
   margin:0 auto;
 }
 
