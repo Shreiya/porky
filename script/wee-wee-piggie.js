@@ -183,7 +183,7 @@ if (piggieLocation == 37) {
 
 // div.innerHTML = "<div class='win'><img src='http://i.giphy.com/6hFPE2KgnLrJS.gif' /><br></div>";
 }
-checkForIncentives();
+// checkForIncentives();
 
 
 
