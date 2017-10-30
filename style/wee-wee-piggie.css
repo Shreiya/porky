@@ -83,7 +83,9 @@ margin-left: 65%;
 }
 
 .treasureChest {
-  background-image: url('../images/Teasure-chest.png');
+  background-image: url('../images/treasure-chest.png');
+  height: 20px;
+  width: 20px;
 }
 
 

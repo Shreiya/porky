@@ -4,15 +4,15 @@ var maze = [
 0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,
 1,1,1,1,1,1,0,0,1,1,1,0,0,1,1,0,0,1,1,
-1,0,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,1,1,
+1,0,"c",0,0,1,0,"k",0,0,1,1,1,0,0,0,0,1,1,
 1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,1,
-1,1,1,0,0,1,1,1,1,0,0,1,0,0,1,0,0,1,1,
+1,1,1,0,"b",1,1,1,1,0,0,1,0,0,1,0,0,1,1,
 1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,
-1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,
+1,0,1,0,0,0,0,0,0,"o",0,1,0,0,1,0,0,1,1,
 1,0,1,1,1,1,1,0,0,0,0,1,0,0,1,0,0,1,1,
 1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,
-1,0,1,0,0,0,1,0,0,1,0,0,0,0,1,0,0,1,1,
-1,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,1,1,
+1,0,1,0,0,0,1,0,0,1,0,0,"m",0,1,0,0,1,1,
+1,0,1,0,0,0,0,"w",0,1,1,0,0,0,1,0,0,1,1,
 1,0,1,0,0,0,0,0,0,0,1,1,1,1,1,0,0,1,1,
 1,0,1,1,1,1,1,1,0,0,1,0,0,0,0,1,0,1,1,
 1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,1,
@@ -47,61 +47,61 @@ function generateMsg () {
   document.getElementById('display').innerHTML = msgAr[random];
 }
 
-//  function checkForIncentives()
-//  {
-//
-//       var incentiveBacon= 24;
-//       var incentiveClown=59;
-//       var incentiveKanye=64;
-//       var incentiveOink=142;
-//       var incentiveMagic=202;
-//       var incentiveWig=216;
-//  if(piggieLocation+1==incentiveBacon || piggieLocation-1==incentiveBacon || piggieLocation+19==incentiveBacon || piggieLocation-19==incentiveBacon)
-// {
-// var d = document.getElementById("block-"+incentiveBacon);
-// d.className = "block bacon";
-//  }
-//
-// if(piggieLocation==incentiveBacon){
-//   document.getElementById('display').innerHTML = "AAAAHHH! This bacon piggy's heart.";
-// } if(piggieLocation+1==incentiveKanye || piggieLocation-1==incentiveKanye || piggieLocation+19==incentiveKanye || piggieLocation-19==incentiveKanye)
-// {
-// var d = document.getElementById("block-"+incentiveKanye);
-// d.className = "block kanye";
-// }
-// if(piggieLocation==incentiveKanye){
-//  document.getElementById('display').innerHTML = "When you find bae just sitting behind a rock, duin nuthin.";
-// } if(piggieLocation+1==incentiveWig || piggieLocation-1==incentiveWig || piggieLocation+19==incentiveWig || piggieLocation-19==incentiveWig)
-// {
-// var d = document.getElementById("block-"+incentiveWig);
-// d.className = "block wig";
-// }
-// if(piggieLocation==incentiveWig){
-//  document.getElementById('display').innerHTML = "Groove, piggy. Groove.";
-// } if(piggieLocation+1==incentiveMagic || piggieLocation-1==incentiveMagic || piggieLocation+19==incentiveMagic || piggieLocation-19==incentiveMagic)
-// {
-// var d = document.getElementById("block-"+incentiveMagic);
-// d.className = "block magic";
-// }
-// if(piggieLocation==incentiveMagic){
-//  document.getElementById('display').innerHTML = "Ohh yeaahh! Piggy doin goooood.";
-// } if(piggieLocation+1==incentiveClown || piggieLocation-1==incentiveClown || piggieLocation+19==incentiveClown || piggieLocation-19==incentiveClown)
-// {
-// var d = document.getElementById("block-"+incentiveClown);
-// d.className = "block clown";
-// }
-// if(piggieLocation==incentiveClown){
-//  document.getElementById('display').innerHTML = "AAAAHHH! Clowns make piggy wet pants. Wait. Piggy don't wear pants.";
-// } if(piggieLocation+1==incentiveOink || piggieLocation-1==incentiveOink || piggieLocation+19==incentiveOink || piggieLocation-19==incentiveOink)
-// {
-// var d = document.getElementById("block-"+incentiveOink);
-// d.className = "block oink";
-// }
-// if(piggieLocation==incentiveOink){
-//  document.getElementById('display').innerHTML = "NICE! Piggy likes his pork-belly rubs.";
-// }
-//
-// };
+ function checkForIncentives()
+ {
+
+      var incentiveFries= 24;
+      var incentiveDrinks=59;
+      var incentiveEntree=64;
+      var incentiveDiscount=142;
+      var incentiveNextVisit=202;
+      var incentiveDessert=216;
+ if(piggieLocation+1==incentiveFries || piggieLocation-1==incentiveFries || piggieLocation+19==incentiveFries || piggieLocation-19==incentiveFries)
+{
+var d = document.getElementById("block-"+incentiveFries);
+d.className = "block Fries";
+ }
+
+if(piggieLocation==incentiveFries){
+  document.getElementById('display').innerHTML = "Good job! Treat that cutie to an order of fries on us!";
+} if(piggieLocation+1==incentiveEntree || piggieLocation-1==incentiveEntree || piggieLocation+19==incentiveEntree || piggieLocation-19==incentiveEntree)
+{
+var d = document.getElementById("block-"+incentiveEntree);
+d.className = "block Entree";
+}
+if(piggieLocation==incentiveEntree){
+ document.getElementById('display').innerHTML = "Looks like you just won yourself an entree of your choosing. Keep going!";
+} if(piggieLocation+1==incentiveDessert || piggieLocation-1==incentiveDessert || piggieLocation+19==incentiveDessert || piggieLocation-19==incentiveDessert)
+{
+var d = document.getElementById("block-"+incentiveDessert);
+d.className = "block Dessert";
+}
+if(piggieLocation==incentiveDessert){
+ document.getElementById('display').innerHTML = "Let's sweeten this deal with a nice Banana Split. You deserve it :)";
+} if(piggieLocation+1==incentiveNextVisit || piggieLocation-1==incentiveNextVisit || piggieLocation+19==incentiveNextVisit || piggieLocation-19==incentiveNextVisit)
+{
+var d = document.getElementById("block-"+incentiveNextVisit);
+d.className = "block NextVisit";
+}
+if(piggieLocation==incentiveNextVisit){
+ document.getElementById('display').innerHTML = "You're so great, we can't wait to have you back. Half off your order on the next visit!";
+} if(piggieLocation+1==incentiveDrinks || piggieLocation-1==incentiveDrinks || piggieLocation+19==incentiveDrinks || piggieLocation-19==incentiveDrinks)
+{
+var d = document.getElementById("block-"+incentiveDrinks);
+d.className = "block Drinks";
+}
+if(piggieLocation==incentiveDrinks){
+ document.getElementById('display').innerHTML = "Bartender! Get these two fine individuals a drink to celebrate!";
+} if(piggieLocation+1==incentiveDiscount || piggieLocation-1==incentiveDiscount || piggieLocation+19==incentiveDiscount || piggieLocation-19==incentiveDiscount)
+{
+var d = document.getElementById("block-"+incentiveDiscount);
+d.className = "block Discount";
+}
+if(piggieLocation==incentiveDiscount){
+ document.getElementById('display').innerHTML = "You did so well that we want to give you a 20% discount right here!";
+}
+
+};
 
    //code for showing the messages.
 
@@ -183,7 +183,7 @@ if (piggieLocation == 37) {
 
 // div.innerHTML = "<div class='win'><img src='http://i.giphy.com/6hFPE2KgnLrJS.gif' /><br></div>";
 }
-// checkForIncentives();
+checkForIncentives();
 
 
 
